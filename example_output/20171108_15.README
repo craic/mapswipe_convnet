@@ -1,0 +1,7 @@
+Run 20171108_15
+
+run with 200 epochs
+
+image_size: 128
+keras_version: 2.0.8
+n_epochs: 200
