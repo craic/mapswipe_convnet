@@ -3,6 +3,8 @@
 This experiment used the code was based on example 5.2 "Using convnets with small datasets"
  in the book  [Deep Learning with Python](https://www.manning.com/books/deep-learning-with-python) by Francois Chollet.
 
+[mapswipe_train_convnet_expt_1.py](mapswipe_train_convnet_expt_1.py)
+
 This uses a model with 4 conv2d / maxpooling2 layers that start with 128x128 images.
 The original tile images are 256x256 but using these results in much slower training with only minor
 improvement in progress.
@@ -43,6 +45,7 @@ _________________________________________________________________
 
 The dataset used in the initial runs was derived from [MapSwipe Project 4877](http://mapswipe.geog.uni-heidelberg.de/?id=4877)
 which aimed to identify buildings in Niger State in Nigeria in support of MSF emergency response in that region.
+The black outline shows the bounds of project 4877. The other regions are other MapSwipe projects.
 
 ![MapSwipe Project 4877 Map](project4877_map.png)
 
