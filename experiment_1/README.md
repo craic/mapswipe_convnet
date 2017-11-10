@@ -3,7 +3,9 @@
 This experiment used the code was based on example 5.2 "Using convnets with small datasets"
  in the book  [Deep Learning with Python](https://www.manning.com/books/deep-learning-with-python) by Francois Chollet.
 
-This uses a model with 4 conv2d / maxpooling2 layers that start with 128x128 images
+This uses a model with 4 conv2d / maxpooling2 layers that start with 128x128 images.
+The original tile images are 256x256 but using these results in much slower training with only minor
+improvement in progress.
 
 ```
 _________________________________________________________________
@@ -86,16 +88,35 @@ If the user supplies a message this will be written to the README file
 ## Results
 
 The loss and accuracy plot shows rapid change early in training followed by slow, steady progress over 200 epochs to
-an accuracy of around 95%.
+an accuracy of around 95%. A common problem with Convnets is Overfitting, typically caused by too little training data. This plot shows no sign of this.
+
 
 ![accuracy_and_loss_plot](results/loss_accuracy_plot.png)
 
-A common problem with Convnets is Overfitting, typically caused by too little training data. This plot shows no sign of this.
+One important test of tranined network is how it performs with other datasets. Positive and Negative tiles were
+selected for 7 other MapSwipe projects in Nigeria (the other regions shown in the map above). Again, Positive tiles
+were required to have been tagged at least 5 times by MapSwipe users.
 
+These were evaluated using [mapswipe_apply_convnet.py](mapswipe_apply_convnet.py) which loads the saved model from file.
 
+These histograms show that the model does a pretty good job discriminating between the two states.
+
+![Histogram with other projects](histogram_with_other_projects.png)
+
+Looking at a sample of the Project 7260 tiles positive tiles that were not classified correctly, it appears that some of the images are hazy, perhaps from
+light clouds. Further analysis is needed.
 
 ## Next Steps
 
+Overall, this initial experiment is very encouraging.
+
+There are a number of avenues that can be explored in other experiments.
+
+* Test whether the model performs as well on datasets from other projects
+* Remove, or lower, the threshold for selecting Positive tiles
+* Evaluate performance with tiles tagged as Ambiguous
+* Evaluate performance with project datasets beyond Nigeria
+* Attempt to speed up the training by, for example, modifying the learning rate
 
 
 
