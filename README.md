@@ -86,7 +86,7 @@ sets if you want train your own system.
 Neither will they contain the trained models, although I will store these on the AWS S3 servers and provide links to them.
 
 With Convnets, the user is faced with a wide array of network architectures (models) and countless parameters that you
-hope to optimize. It makes me think of a studio mixing desk.
+hope to optimize. It makes me think of a studio mixing desk. It's a nightmare :^)
 
 ![Mixing Desk](images/mixing_desk_600.png)
 
