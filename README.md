@@ -91,5 +91,7 @@ hope to optimize. It makes me think of a studio mixing desk. It's a nightmare :^
 ![Mixing Desk](images/mixing_desk_600.png)
 
 
+[Experiment #1](experiment_1) - Basic Convnet with limited tuning
+
 
 
