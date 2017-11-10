@@ -78,6 +78,26 @@ In that directory there will be :
 The script is run like this:
 ```
 $ ./mapswipe_convnet.py --project ../project_data --n_epochs 50 --output ~/output --message "changed droput to 0.6"
-``
+```
+
 If the user supplies a message this will be written to the README file
+
+
+## Results
+
+The loss and accuracy plot shows rapid change early in training followed by slow, steady progress over 200 epochs to
+an accuracy of around 95%.
+
+![accuracy_and_loss_plot](results/loss_accuracy_plot.png)
+
+A common problem with Convnets is Overfitting, typically caused by too little training data. This plot shows no sign of this.
+
+
+
+## Next Steps
+
+
+
+
+
 
