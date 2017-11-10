@@ -32,7 +32,7 @@ Furthermore, we want to distinguish these against a background of terrain that i
 Because MapSwipe tiles have been examined by human volunteers, often multiple times, we can have a good degree of
 confidence in their assignment. These assignments form the basis for the machine learning training sets.
 
-Positive Images
+Example Positive Images
 
 Images 1 and 2 contain rectangular buildings, images 1, 3, and 4 contain groups of circular huts
 
@@ -42,7 +42,7 @@ Images 1 and 2 contain rectangular buildings, images 1, 3, and 4 contain groups 
 ![Example Positive Image 3](images/example_positive_3.jpg)
 ![Example Positive Image 4](images/example_positive_4.jpg)
 
-Negative Images
+Example Negative Images
 
 These images represent different types of terrain with no buildings
 
