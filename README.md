@@ -2,7 +2,7 @@
 
 Experiments using a Convolutional Neural Network with data from the MapSwipe project
 
-** NOTE ** this is a work in progress - Nov 2017
+This is a work in progress...
 
 
 ## Background
@@ -86,12 +86,14 @@ sets if you want train your own system.
 Neither will they contain the trained models, although I will store these on the AWS S3 servers and provide links to them.
 
 With Convnets, the user is faced with a wide array of network architectures (models) and countless parameters that you
-hope to optimize. It makes me think of a studio mixing desk. It's a nightmare :^)
+hope to optimize. It makes me think of a studio mixing desk.
 
 ![Mixing Desk](images/mixing_desk_600.png)
 
 
 [Experiment #1](experiment_1) - Basic Convnet with limited tuning
+
+[Experiment #2](experiment_2) - VGG16 model with a much larger dataset
 
 
 
