@@ -69,10 +69,12 @@ I recommend both of these.
 
 All my code is written in Python 3 and uses [Keras](https://keras.io/) with TensorFlow as the backend.
 
-All training runs take place on Amazon Web Services using a custom EC2 instance based on a preconfigured AMI created by Adrian Rosenbock and
+Earlier training runs took place on Amazon Web Services using a custom EC2 instance based on a preconfigured AMI created by Adrian Rosenbock and
 described in this [tutorial](https://www.pyimagesearch.com/2017/09/20/pre-configured-amazon-aws-deep-learning-ami-with-python/)
 which I run as a **p2.xlarge** instance which has a graphics card accelerator that is necessary for this sort of
 computation. That costs about US $1 per hour.
+
+Currently I am using a custom Ubuntu linux machine with a Nvidia GTX 1080TI graphics card.
 
 
 ## Experiments

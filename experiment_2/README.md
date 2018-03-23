@@ -86,7 +86,7 @@ The model from the best epoch was saved and used to evaluate the Test dataset. T
 
 ![accuracy_and_loss_plot](results/loss_accuracy_plot.png)
 
-
+![test_set_predictions](results/test_set_histogram.png)
 
 
 ## Next Steps
