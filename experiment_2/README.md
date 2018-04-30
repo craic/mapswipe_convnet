@@ -154,13 +154,29 @@ The other three appear to be true negatives.
 
 ![example_images_1_vote](results/example_images_1_vote.png)
 
-Images with only a single vote are, by definition, somewaht ambiguous. of the four predicted positives, two contain clusters
-of circular buildings, one contains a single rectangular structure and the lst contains a small irregular object next to a track, which may 
+Images with only a single vote are, by definition, somewhat ambiguous. of the four predicted positives, two contain clusters
+of circular buildings, one contains a single rectangular structure and the last contains a small irregular object next to a track, which may 
 not be a true positive.
 
-None of the predicited negatives in this set appears to contain a real building.
+None of the predicted negatives in this set appears to contain a real building.
 
+
+The histogram and the manual analysis both suggest that this trained network could be an effective secondary screen of 
+completed MapSwipe datasets, serving to remove, or flag, likely false positives. This could help downstream users in 
+Missing Maps process the results more effectively.
 
 ## Next Steps
 
+A great deal of focus in using Machine Learning for image classification uses pre-existing trained networks for Transfer Learning. This
+has proved very effective in various object recognition projects, such as facial recognition, self-driving cars.
 
+My initial experiments with this have not produced results anywhere near as good as those shown here, using a network that was trained
+solely on map tiles. The images in these tiles are quite distinct from the large general images datasets used in other 
+projects which include people, faces, cars, etc. 
+
+I hope to study those approaches in more detail to see if this is indeed correct.
+
+Because even the MapSwipe images with multiple votes can contain apparent negatives there may be the opportunity to use the
+trained network to remove these prior to a second round of training. There is, of course, a risk here in introducing a bias 
+into the training datasets.
+ 
