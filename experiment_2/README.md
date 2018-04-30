@@ -166,9 +166,8 @@ completed MapSwipe datasets, serving to remove, or flag, likely false positives.
 Missing Maps process the results more effectively.
 
 ## Next Steps
-
-A great deal of focus in using Machine Learning for image classification uses pre-existing trained networks for Transfer Learning. This
-has proved very effective in various object recognition projects, such as facial recognition, self-driving cars.
+One focus in using Machine Learning for image classification uses pre-existing trained networks for Transfer Learning. This
+has proved very effective in various object recognition projects, such as facial recognition, self-driving cars, etc.
 
 My initial experiments with this have not produced results anywhere near as good as those shown here, using a network that was trained
 solely on map tiles. The images in these tiles are quite distinct from the large general images datasets used in other 
@@ -179,4 +178,4 @@ I hope to study those approaches in more detail to see if this is indeed correct
 Because even the MapSwipe images with multiple votes can contain apparent negatives there may be the opportunity to use the
 trained network to remove these prior to a second round of training. There is, of course, a risk here in introducing a bias 
 into the training datasets.
- 
+
